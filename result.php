@@ -14,7 +14,7 @@ if (!$result) die("結果がありません");
         body {
             background: #0b1d2e;
             color: #fff;
-            font-family: sans-serif;
+            font-family: 'Yu Gothic', sans-serif;
             text-align: center;
             padding: 40px;
         }
@@ -25,6 +25,13 @@ if (!$result) die("結果がありません");
             margin: 15px auto;
             width: 70%;
             border-radius: 10px;
+        }
+
+        .amira {
+            margin-top: 40px;
+            opacity: 0.85;
+            line-height: 1.8;
+            font-size: 15px;
         }
     </style>
 </head>
@@ -79,6 +86,12 @@ if (!$result) die("結果がありません");
     <?php foreach ($result["advice"] as $a): ?>
         <div class="card"><?= htmlspecialchars($a) ?></div>
     <?php endforeach; ?>
+
+    <div class="amira">
+        🌙 <strong>アミラより</strong><br>
+        「心が揺れるときこそ、静けさの中に答えが宿ります。<br>
+        あなたが選ぶ一歩が、未来の形をそっと変えていくのです。」
+    </div>
 
 </body>
 
